@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JingZhi.iml" filepath="$PROJECT_DIR$/JingZhi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JingZhiApp/JingZhiApp.iml" filepath="$PROJECT_DIR$/JingZhiApp/JingZhiApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xxutils/xxutils.iml" filepath="$PROJECT_DIR$/xxutils/xxutils.iml" />
+    </modules>
+  </component>
+</project>
