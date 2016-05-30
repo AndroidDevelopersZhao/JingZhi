@@ -5,7 +5,9 @@ package com.shanghai.jingzhi.jingzhiutils;
  */
 public class Default_P {
 //    public static final String URL = "http://221.228.88.249:8080/IISService_2/index";
-    public static final String URL = "http://192.168.12.142:8080/IISService_2/index";
+//public static final String URL = "http://192.168.12.142:8080/IISService_2/index";
+    public static final String URL = "http://192.168.1.123:8080/IISService_2/index";
+
 
     public static boolean isLogin = false;//用户登录状态
     public static final String FileName_Login_Check = "FileName_Login_Check";//该文件名为保存登录页面的记住密码按钮下的内容

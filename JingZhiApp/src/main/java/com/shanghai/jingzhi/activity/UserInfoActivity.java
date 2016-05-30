@@ -107,7 +107,7 @@ public class UserInfoActivity extends BaseActivity implements View.OnClickListen
 
                 break;
             case R.id.lt_album:
-
+                Log.d("个人相册");
                 break;
             case R.id.lt_mymoney:
 
@@ -146,9 +146,9 @@ public class UserInfoActivity extends BaseActivity implements View.OnClickListen
                     Utils.Toast(getApplicationContext(), "注销成功");
                     XXSharedPreferences sharedPreferences = Utils.getNewSharedObject(Default_P.FileName_UserState);
 //                    sharedPreferences.clear(getApplicationContext());
-                    sharedPreferences.put(getApplicationContext(),Default_P.Key_UserName,"");
-                    sharedPreferences.put(getApplicationContext(),Default_P.Key_Sessionid,"");
-                    Default_P.isLogin=false;
+                    sharedPreferences.put(getApplicationContext(), Default_P.Key_UserName, "");
+                    sharedPreferences.put(getApplicationContext(), Default_P.Key_Sessionid, "");
+                    Default_P.isLogin = false;
                     setResult(0x01);
                     finish();
 

@@ -1,10 +1,8 @@
 package cn.com.xxutils.util;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
-import android.graphics.drawable.TransitionDrawable;
 import android.widget.ImageView;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -13,8 +11,6 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
-
-import cn.com.xxutils.R;
 
 /**
  * Created by Administrator on 2016/2/22.
@@ -74,7 +70,7 @@ public class XXImagesLoader {
                     .cacheOnDisk(isCache)
                     .considerExifParams(true)
                     .bitmapConfig(Bitmap.Config.RGB_565)
-                    .displayer(new RoundedBitmapDisplayer(20))
+//                    .displayer(new RoundedBitmapDisplayer(20))
                     .build();
         } else {
             this.options = imageloderOptions;
