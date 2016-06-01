@@ -9,6 +9,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 
+import com.baidu.location.BDLocation;
+import com.baidu.location.BDLocationListener;
+import com.baidu.location.LocationClientOption;
+import com.baidu.mapapi.SDKInitializer;
+import com.shanghai.jingzhi.App;
 import com.shanghai.jingzhi.BaseActivity;
 import com.shanghai.jingzhi.R;
 import com.shanghai.jingzhi.fragment.F_Home;
@@ -39,11 +44,37 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SDKInitializer.initialize(getApplicationContext());
         setContentView(R.layout.activity_main);
         initView();
         Log.d("MainActivity-onCreate");
         Utils.replaceFragment(this, fragments[0]);
         setUserSate();
+        Log.d("数据获取完成,开启定位服务");
+        startGetUserLocation();
+    }
+
+    private void startGetUserLocation() {
+        LocationClientOption option = new LocationClientOption();
+        option.setLocationMode(LocationClientOption.LocationMode.Hight_Accuracy);//设置定位模式
+        option.setCoorType("bd09ll");//返回的定位结果是百度经纬度,默认值gcj02
+        option.setScanSpan(5000);//设置发起定位请求的间隔时间为5000ms
+        option.setIsNeedAddress(true);//返回的定位结果包含地址信息
+        option.setNeedDeviceDirect(true);//返回的定位结果包含手机机头的方向
+        App.mLocationClient.setLocOption(option);
+//        App.mLocationClient.registerLocationListener(new BDLocationListener() {
+//            @Override
+//            public void onReceiveLocation(BDLocation bdLocation) {
+//                Log.d("定位成功:" + bdLocation.getCity());
+//                Log.d("定位成功:" + bdLocation.getAddrStr());
+//                Log.d("定位成功:" + bdLocation.getCountry());
+//                Log.d("定位成功:" + bdLocation.getProvince());
+//                Log.d("定位成功:" + bdLocation.getAltitude());
+//                Log.d("经度:" + bdLocation.getLongitude());
+//                Log.d("weidu:" + bdLocation.getLatitude());
+//            }
+//        });
+//        App.mLocationClient.start();
     }
 
     private void setUserSate() {
@@ -140,5 +171,40 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             }
         }).show();
         return false;
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //在activity执行onDestroy时执行mMapView.onDestroy()，实现地图生命周期管理
+        try {
+            F_StartLocation.bmapView.onDestroy();
+        } catch (Throwable throwable) {
+            Log.e("F_StartLocation.bmapView.onDestroy()执行失败,可能是该view还未被创建");
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        //在activity执行onResume时执行mMapView. onResume ()，实现地图生命周期管理
+
+        try {
+            F_StartLocation.bmapView.onResume();
+        } catch (Throwable throwable) {
+            Log.e(" F_StartLocation.bmapView.onResume()执行失败,可能是该view还未被创建");
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        //在activity执行onPause时执行mMapView. onPause ()，实现地图生命周期管理
+
+        try {
+            F_StartLocation.bmapView.onPause();
+        } catch (Throwable throwable) {
+            Log.e(" F_StartLocation.bmapView.onPause()执行失败,可能是该view还未被创建");
+        }
     }
 }
