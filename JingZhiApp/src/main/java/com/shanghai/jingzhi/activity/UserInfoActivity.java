@@ -1,5 +1,6 @@
 package com.shanghai.jingzhi.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -108,6 +109,7 @@ public class UserInfoActivity extends BaseActivity implements View.OnClickListen
                 break;
             case R.id.lt_album:
                 Log.d("个人相册");
+                startActivityForResult(new Intent(this, AlbumActivity.class), 0x01);
                 break;
             case R.id.lt_mymoney:
 
@@ -121,6 +123,17 @@ public class UserInfoActivity extends BaseActivity implements View.OnClickListen
             case R.id.bt_disLogin:
                 disLogin();
                 break;
+
+
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == 0x01) {
+            //从个人相册页面返回
+            Log.d("从个人相册页面返回用户个人中心页面");
 
 
         }

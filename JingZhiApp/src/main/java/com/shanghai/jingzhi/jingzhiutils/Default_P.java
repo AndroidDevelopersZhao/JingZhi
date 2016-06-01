@@ -6,7 +6,7 @@ package com.shanghai.jingzhi.jingzhiutils;
 public class Default_P {
 //    public static final String URL = "http://221.228.88.249:8080/IISService_2/index";
 //public static final String URL = "http://192.168.12.142:8080/IISService_2/index";
-    public static final String URL = "http://192.168.1.123:8080/IISService_2/index";
+    public static final String URL = "http://192.168.12.142:8080/IISService_2/index";
 
 
     public static boolean isLogin = false;//用户登录状态
@@ -18,6 +18,5 @@ public class Default_P {
     public static final String Key_Sessionid = "sessionid";//key
     public static final String Key_UserNickName = "usernickname";//key
     public static final String Key_UserLogoUrl = "userlogo";//key
-
 
 }
