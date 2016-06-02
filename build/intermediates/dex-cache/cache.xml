@@ -1,2 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/exploded-aar/JingZhi/xxutils/unspecified/jars/libs/nineoldandroids-2.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2a805e21b60a7c24b2c881ee2423cd37c5c6d25">
+        <dex dex="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0_68d81df7a3561d036f08497968c8f0efd7d1c780.jar" />
+    </item>
+    <item
+        jar="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/exploded-aar/JingZhi/xxutils/unspecified/jars/libs/android-async-http-1.4.8.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="0f13942d3f6611fbe16c325df391ae0a7ed00b91">
+        <dex dex="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/pre-dexed/debug/android-async-http-1.4.8_8a3302af58d933d16cf70141d8d29e83b5fab4f7.jar" />
+    </item>
+    <item
+        jar="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/exploded-aar/JingZhi/xxutils/unspecified/jars/libs/universal-image-loader-1.9.5.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="39a46bf287f91803838d8d6478d893405f396bfe">
+        <dex dex="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.5_93fe51c03a024c000723eb658a4e35e136bcaeb5.jar" />
+    </item>
+    <item
+        jar="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/exploded-aar/JingZhi/xxutils/unspecified/jars/libs/gson-2.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="41158cc074ce3c8e0924ad425ea5f22a384842ab">
+        <dex dex="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/pre-dexed/debug/gson-2.1_6012b5bd24f0189d6e16176f1202b822a97f3062.jar" />
+    </item>
+
+</items>
