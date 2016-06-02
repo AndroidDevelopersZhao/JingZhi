@@ -55,13 +55,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
 
     private void startGetUserLocation() {
-        LocationClientOption option = new LocationClientOption();
-        option.setLocationMode(LocationClientOption.LocationMode.Hight_Accuracy);//设置定位模式
-        option.setCoorType("bd09ll");//返回的定位结果是百度经纬度,默认值gcj02
-        option.setScanSpan(5000);//设置发起定位请求的间隔时间为5000ms
-        option.setIsNeedAddress(true);//返回的定位结果包含地址信息
-        option.setNeedDeviceDirect(true);//返回的定位结果包含手机机头的方向
-        App.mLocationClient.setLocOption(option);
 //        App.mLocationClient.registerLocationListener(new BDLocationListener() {
 //            @Override
 //            public void onReceiveLocation(BDLocation bdLocation) {
@@ -138,16 +131,30 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
                 break;
             case R.id.bt_setting:
+
+
                 if (!fragments[1].isVisible())
                     Utils.replaceFragment(this, fragments[1]);
 
-                break;
-            case R.id.bt_l_c:
-                if (!fragments[2].isVisible())
-                    Utils.replaceFragment(this, fragments[2]);
 
                 break;
+            case R.id.bt_l_c:
+                if (!Default_P.isLogin) {
+                    Utils.Toast(this, "请先登录");
+                    return;
+                }
+                if (Default_P.bitmap != null) {
+                    if (!fragments[2].isVisible())
+                        Utils.replaceFragment(this, fragments[2]);
+                } else {
+                    Utils.Toast(this, "请定位后再操作");
+                }
+                break;
             case R.id.bt_location:
+                if (!Default_P.isLogin) {
+                    Utils.Toast(this, "请先登录");
+                    return;
+                }
                 if (!fragments[3].isVisible())
                     Utils.replaceFragment(this, fragments[3]);
 
@@ -178,7 +185,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         super.onDestroy();
         //在activity执行onDestroy时执行mMapView.onDestroy()，实现地图生命周期管理
         try {
+            App.mLocationClient.unRegisterLocationListener(new BDLocationListener() {
+                @Override
+                public void onReceiveLocation(BDLocation bdLocation) {
+                    Log.d("百度定位监听已关闭");
+                }
+            });
             F_StartLocation.bmapView.onDestroy();
+            App.mLocationClient.stop();
         } catch (Throwable throwable) {
             Log.e("F_StartLocation.bmapView.onDestroy()执行失败,可能是该view还未被创建");
         }
