@@ -2,11 +2,88 @@
 <items version="2" >
 
     <item
+        jar="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_b5ee756ac157bd9d419b0ac8036a6866ac5e5a07.jar" />
+    </item>
+    <item
         jar="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/exploded-aar/JingZhi/xxutils/unspecified/jars/libs/nineoldandroids-2.4.0.jar"
         jumboMode="true"
         revision="23.0.3"
         sha1="c2a805e21b60a7c24b2c881ee2423cd37c5c6d25">
         <dex dex="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0_68d81df7a3561d036f08497968c8f0efd7d1c780.jar" />
+    </item>
+    <item
+        jar="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_3168c4b54f8a577b697258c0f33a2cc2f5a301f8.jar" />
+    </item>
+    <item
+        jar="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/libs/BaiduLBS_Android.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b4866a089b63f9c521cb00947b67f3943809c9d8">
+        <dex dex="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/pre-dexed/debug/BaiduLBS_Android_4408f514fc71a265e822cddbb8d8b10f9fe69829.jar" />
+    </item>
+    <item
+        jar="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_8374b10febc93fd16e1e5345cc6a7d55e00f4bed.jar" />
+    </item>
+    <item
+        jar="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_ecc67270b1e44ca10ccd1f7f0cf5905cc6bf27b9.jar" />
+    </item>
+    <item
+        jar="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="87a66e3616a09b28de1d5094600d42c4e6f16216">
+        <dex dex="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/pre-dexed/debug/instant-run_0830fab046d915983c1f41b39ad4229f6efad6cd.jar" />
+    </item>
+    <item
+        jar="/Users/zhaowenyun/Desktop/androidssdk/android-sdk--mac-r24-updated/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_feafff48434de21dfe3858df6682be709a2882a8.jar" />
+    </item>
+    <item
+        jar="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="160533646523bd294ab0d090c8bb8c7d6fbe4f32">
+        <dex dex="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/pre-dexed/debug/instant-run-bootstrap_38b84a1fa898ce7398174fe31b8065a4db05b725.jar" />
+    </item>
+    <item
+        jar="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_01a2f5599c2fbfabe1a652863ed4cb8e71807af9.jar" />
+    </item>
+    <item
+        jar="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/libs/IndoorscapeAlbumPlugin.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2db8e46c4d11e86116c2b65bfd00ed86b7676ba0">
+        <dex dex="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/pre-dexed/debug/IndoorscapeAlbumPlugin_34f1eff742ebbef7fa880076fa39dc979aded31f.jar" />
+    </item>
+    <item
+        jar="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/libs/httpmime-4.1.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ed8b5ee0167cb27dea55851259eb34b609f31df0">
+        <dex dex="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/pre-dexed/debug/httpmime-4.1.2_5ea9ba04975ed5be9455e42e0b42ff196abf5233.jar" />
     </item>
     <item
         jar="/Users/zhaowenyun/Desktop/android-workspace/JingZhi/JingZhiApp/build/intermediates/exploded-aar/JingZhi/xxutils/unspecified/jars/libs/android-async-http-1.4.8.jar"

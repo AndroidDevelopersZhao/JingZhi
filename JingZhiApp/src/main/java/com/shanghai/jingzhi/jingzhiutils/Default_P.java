@@ -6,8 +6,9 @@ import android.graphics.Bitmap;
  * Created by zhaowenyun on 16/5/30.
  */
 public class Default_P {
-    //    public static final String URL = "http://221.228.88.249:8080/IISService_2/index";
-public static final String URL = "http://192.168.12.142:8080/IISService_2/index";
+    public static final String URL = "http://139.196.182.13:8080/IISService_2/index";
+    //
+//public static final String URL = "http://192.168.12.142:8080/IISService_2/index";
 //    public static final String URL = "http://192.168.13.135:8080/IISService_2/index";
     public static final String BaiDuAK = "IdjQsrKRaioz8cEyrSh8rIGXrTZRAP6S";
 
