@@ -52,6 +52,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         setUserSate();
         Log.d("数据获取完成,开启定位服务");
         startGetUserLocation();
+        isUpdata();
+    }
+
+    private void isUpdata() {
+
     }
 
     private void startGetUserLocation() {
